@@ -4,7 +4,6 @@ package string;
 public class Main
 {
     public static void main(String[] args) {
-
         String str = "Java - строго типизированный объектно-ориентированный язык программирования, разработанный компанией Sun Microsystems в последующем приобретённой компанией Oracle";
         String str2 = "Java - строго типизированный объектно-ориентированный язык программирования";
 
@@ -41,10 +40,17 @@ public class Main
         //Задание 15
         System.out.println("Задание 15: " + str.substring(44,90));
         //Задание 16
-        str.split(" ");
+        System.out.println("Задание 16: ");
+        for (String strP : str.split(" ")){
+            System.out.println(strP);
+        };
         //Задание 17
-
-
-
+        StringBuilder stringBuilder = new StringBuilder(str);
+        //Задание 18
+        System.out.println("Задание 18: " + stringBuilder.append('.'));
+        //Задание 19
+        System.out.println("Задание 19: " + stringBuilder.delete(stringBuilder.indexOf(","),stringBuilder.indexOf("Oracle")+6));
+        //Задание 20
+        System.out.println("Задание 20: " + stringBuilder.reverse());
     }
 }
