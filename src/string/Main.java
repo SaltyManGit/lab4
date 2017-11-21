@@ -43,7 +43,7 @@ public class Main
         System.out.println("Задание 16: ");
         for (String strP : str.split(" ")){
             System.out.println(strP);
-        };
+        }
         //Задание 17
         StringBuilder stringBuilder = new StringBuilder(str);
         //Задание 18
